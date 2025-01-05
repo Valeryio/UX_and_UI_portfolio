@@ -1,15 +1,19 @@
-import { useState } from 'react';
-import './home.css';
-import { BrowserRouter } from 'react-router-dom';
-import About from './about';
-import contact from './contact';
+
+import "./home.css";
+import button from "../components/ui/button";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 
 
 function Home() {
-  return <div>
-        <Router>
-            
-        </Router>
-  </div>
+  return <>
+      <section className="hero-header">
+        <h1 className="hero-header-title">
+        Adaptive Logo Design for Your Brand
+        </h1>
+      </section>
+  </>
 }
+
+export default Home;
