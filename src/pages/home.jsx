@@ -1,6 +1,6 @@
 
 import "./home.css";
-import button from "../components/ui/button";
+import Button from "../components/ui/button";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -12,6 +12,7 @@ function Home() {
         <h1 className="hero-header-title">
         Adaptive Logo Design for Your Brand
         </h1>
+
       </section>
   </>
 }
