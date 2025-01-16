@@ -2,6 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+      font-family: 'Syne';
+      src: url('./assets/fonts/Syne-Bold.woff2') format('woff2'),
+          url('./assets/fonts/Syne-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Syne';
+      src: url('./assets/fonts/Syne-Medium.woff2') format('woff2'),
+          url('./assets/fonts/Syne-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Syne';
+      src: url('./assets/fonts/Syne-ExtraBold.woff2') format('woff2'),
+          url('./assets/fonts/Syne-ExtraBold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Syne';
+      src: url('./assets/fonts/Syne-Regular.woff2') format('woff2'),
+          url('./assets/fonts/Syne-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Syne';
+      src: url('./assets/fonts/Syne-SemiBold.woff2') format('woff2'),
+          url('./assets/fonts/Syne-SemiBold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  .btn--arrow
+  {
+    box-shadow: 4px 4px 4px #535bf2;
+  }
+
+  button
+  {
+    position: relative;
+  }
+
+  button[data-icon="arrow-right"]::after
+  {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    background-image: url(./assets/icons/arrow_right.svg);
+  }
+
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -29,12 +97,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
+/* 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -75,4 +140,4 @@ button:focus-visible {
 body
 {
   background-color: #1a1a1a;
-}
+} */
