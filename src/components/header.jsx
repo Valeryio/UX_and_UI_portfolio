@@ -14,13 +14,13 @@ function Header() {
             <nav className="flex gap-4r items-center" >
             <ul className="flex gap-4" >
                 <li className="navlink">
-                    <Link to="/" className="font-medium text-c-black-25 hover:text-white hover:text-semibold" >HOME</Link>
+                    <Link to="/" className="font-medium text-c-white-50 hover:text-white hover:text-semibold" >HOME</Link>
                 </li>
                 <li className="navlink">
-                    <Link to="/about" className="font-medium text-c-black-25 hover:text-white hover:text-semibold"  >ABOUT</Link>
+                    <Link to="/about" className="font-medium text-c-white-50 hover:text-white hover:text-semibold"  >ABOUT</Link>
                 </li>
                 <li className="navlink">
-                    <Link to="/contact" className="font-medium text-c-black-25 hover:text-white hover:text-semibold" >MY WORKS</Link>
+                    <Link to="/contact" className="font-medium text-c-white-50 hover:text-white hover:text-semibold" >MY WORKS</Link>
                 </li>
             </ul>
             

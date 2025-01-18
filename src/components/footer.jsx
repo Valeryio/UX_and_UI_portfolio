@@ -2,9 +2,10 @@ import Logo from "./../assets/icons/logo.svg";
 import { Link } from "react-router-dom";
 
 
-function Footer() {
-  return <footer>
-
+const Footer = () => {
+  return (
+      
+      <footer className="border" >
         <img src={Logo} alt="Logo of the designer" />
 
         <div className="footer__contact">
@@ -22,6 +23,6 @@ function Footer() {
 
         <p> &copy 2025 All right reserved!</p>
   </footer>
-}
+  )};
 
 export default Footer;

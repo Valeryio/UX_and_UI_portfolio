@@ -48,11 +48,6 @@
       font-display: swap;
   }
 
-  .btn--arrow
-  {
-    box-shadow: 4px 4px 4px #535bf2;
-  }
-
   button
   {
     position: relative;
@@ -61,16 +56,53 @@
   button[data-icon="arrow-right"]::after
   {
     content: "";
-    width: 2rem;
-    height: 2rem;
+    width: 18px;
+    height: 12px;
     position: absolute;
     top: 50%;
-    left: -50%;
-    background-image: url(./assets/icons/arrow_right.svg);
+    right: 5%;
+    background-image: url(/public/icons/icon.svg);
+  }
+
+  div[data-img="profile-img-container"]
+  {
+    position: relative;
+  }
+
+  div[data-img="profile-img-container"]::after, 
+  div[data-img="profile-img-container"]::before
+  {
+    content: "";
+    border-radius: 2rem;
+    position: absolute;
+    border: 1px solid #FF9142;
+  }
+
+    
+  div[data-img="profile-img-container"]::before
+  {
+    z-index: 1;
+    bottom: 2rem;
+    left: -1.5rem;
+    width: 3rem;
+    height: 10rem;
+  }
+
+  div[data-img="profile-img-container"]::after
+  {
+    top: -1.5rem;
+    right: 4rem;
+    width: 10rem;
+    height: 3rem;
+  }
+
+  img
+  {
+    width: 100%;
   }
 
 }
-
+/* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -93,7 +125,7 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;

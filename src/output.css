@@ -619,11 +619,6 @@ video {
   font-display: swap;
 }
 
-.btn--arrow
-  {
-  box-shadow: 4px 4px 4px #535bf2;
-}
-
 button
   {
   position: relative;
@@ -632,12 +627,48 @@ button
 button[data-icon="arrow-right"]::after
   {
   content: "";
-  width: 2rem;
-  height: 2rem;
+  width: 18px;
+  height: 12px;
   position: absolute;
   top: 50%;
-  left: -50%;
-  background-image: url(./assets/icons/arrow_right.svg);
+  right: 5%;
+  background-image: url(/public/icons/icon.svg);
+}
+
+div[data-img="profile-img-container"]
+  {
+  position: relative;
+}
+
+div[data-img="profile-img-container"]::after, 
+  div[data-img="profile-img-container"]::before
+  {
+  content: "";
+  border-radius: 2rem;
+  position: absolute;
+  border: 1px solid #FF9142;
+}
+
+div[data-img="profile-img-container"]::before
+  {
+  z-index: 1;
+  bottom: 2rem;
+  left: -1.5rem;
+  width: 3rem;
+  height: 10rem;
+}
+
+div[data-img="profile-img-container"]::after
+  {
+  top: -1.5rem;
+  right: 4rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+img
+  {
+  width: 100%;
 }
 
 .collapse {
@@ -646,6 +677,14 @@ button[data-icon="arrow-right"]::after
 
 .relative {
   position: relative;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
 }
 
 .block {
@@ -668,8 +707,16 @@ button[data-icon="arrow-right"]::after
   display: none;
 }
 
-.w-48r {
-  width: 48rem;
+.w-40r {
+  width: 40rem;
+}
+
+.w-56r {
+  width: 56rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-lgo {
@@ -680,6 +727,10 @@ button[data-icon="arrow-right"]::after
   border-collapse: collapse;
 }
 
+.grid-cols-r-auto {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 32rem));
+}
+
 .grid-cols-r-img-colgrid {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -688,12 +739,24 @@ button[data-icon="arrow-right"]::after
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-2r {
@@ -708,8 +771,16 @@ button[data-icon="arrow-right"]::after
   gap: 4rem;
 }
 
+.gap-8r {
+  gap: 8rem;
+}
+
 .rounded-c-32 {
   border-radius: 2rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .border {
@@ -723,6 +794,11 @@ button[data-icon="arrow-right"]::after
 .border-c-black-25 {
   --tw-border-opacity: 1;
   border-color: rgb(105 105 105 / var(--tw-border-opacity, 1));
+}
+
+.border-rose-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 29 72 / var(--tw-border-opacity, 1));
 }
 
 .border-violet-300 {
@@ -740,6 +816,11 @@ button[data-icon="arrow-right"]::after
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-c-black-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity, 1));
+}
+
 .bg-c-orange-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 145 66 / var(--tw-bg-opacity, 1));
@@ -748,6 +829,10 @@ button[data-icon="arrow-right"]::after
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -770,9 +855,9 @@ button[data-icon="arrow-right"]::after
   padding-bottom: 2rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -783,16 +868,24 @@ button[data-icon="arrow-right"]::after
   font-family: Syne, sans-serif;
 }
 
-.text-3r {
-  font-size: 3rem;
+.text-1\.5r {
+  font-size: 1.5rem;
 }
 
 .text-4r {
   font-size: 4rem;
 }
 
+.text-5r {
+  font-size: 5rem;
+}
+
 .text-base {
   font-size: 14px;
+}
+
+.text-p {
+  font-size: 1.2rem;
 }
 
 .font-medium {
@@ -803,18 +896,25 @@ button[data-icon="arrow-right"]::after
   font-weight: 600;
 }
 
-.text-c-black-25 {
-  --tw-text-opacity: 1;
-  color: rgb(105 105 105 / var(--tw-text-opacity, 1));
+.text-c-white-50 {
+  color: rgb(225, 225, 225, 0.55);
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+/* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -826,10 +926,9 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-
 a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
