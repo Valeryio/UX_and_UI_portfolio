@@ -69,6 +69,16 @@
     position: relative;
   }
 
+  .obj::after,
+  .obj::before,
+  .deco-t::after,
+  .deco-t::before,
+  .deco-l::after,
+  .deco-l::before,
+  .deco-b::after,
+  .deco-b::before,
+  .deco-r::after,
+  .deco-r::before,
   div[data-img="profile-img-container"]::after, 
   div[data-img="profile-img-container"]::before
   {
@@ -95,10 +105,50 @@
     width: 10rem;
     height: 3rem;
   }
+  
+  .deco-lr::before
+  {
+    z-index: 1;
+    bottom: 2rem;
+    left: -1.5rem;
+    width: 3rem;
+    height: 10rem;  
+  }
+
+  .obj::before
+  {
+    z-index: 1;
+    bottom: 2rem;
+    left: -1.5rem;
+    width: 3rem;
+    height: 10rem;  
+  }
+
+  .obj::after
+  {
+    top: -1.5rem;
+    right: 4rem;
+    width: 10rem;
+    height: 3rem;
+  }
 
   img
   {
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonials-title
+  {
+    position: relative;
+  }
+
+  .testimonials-title::after
+  {
+    right: -16rem;
+    content: url(../public/icons/hyphens.svg);
+    width: 174px;
+    height: 96px;
+    position: absolute;
   }
 
 }

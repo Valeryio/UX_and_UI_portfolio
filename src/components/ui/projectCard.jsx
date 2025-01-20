@@ -10,7 +10,7 @@ const ProjectCard = ({img_name}) => {
     }
 
   return (
-    <div className="border border-rose-600 p-4 rounded-sm flex flex-col gap-2" >
+    <div className="p-4 rounded-sm flex flex-col gap-2" >
         <img src={path} alt="Image of a project" />
 
         <div className=" flex flex-col gap-2" >

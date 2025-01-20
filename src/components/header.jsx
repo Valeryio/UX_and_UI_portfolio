@@ -5,10 +5,10 @@ import Button from "./ui/button";
 
 
 function Header() {
-  return <div className="flex border items-center justify-between px-4" >
+  return <div className="py-2r px-6r flex items-center justify-between" >
 
             <Link to="/" >
-                <img src="/icons/logo.svg" className="w-lgo" alt="Logo of the designer" />
+                <img src="/icons/logo.svg" className="w-7r" alt="Logo of the designer" />
             </Link>
           
             <nav className="flex gap-4r items-center" >

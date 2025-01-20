@@ -28,9 +28,12 @@ export default {
         "4r": "4rem",
         "5r": "5rem",
         "6r": "6rem",
+        "7r": "7rem",
+        "7.5r": "7.5rem",
         "8r": "8rem",
         "9r": "9rem",
         "10r": "10rem",
+        "12r": "12rem",
         "16r": "16rem",
         "18r": "18rem",
         "20r": "20rem",
@@ -46,7 +49,9 @@ export default {
         "72r": "72rem",
         "75r": "75rem",
         "80r": "80rem",
+        "84r": "84rem",
         "88r": "88rem",
+        "96r": "96rem",
         "w-var": "minmax(250px, 800px)"
       },
       borderRadius: {

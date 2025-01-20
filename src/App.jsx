@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <main 
-        className="text-white bg-c-black-100 py-2r px-4r border font-syne flex flex-col gap-8r">
+        className="max-w-96r text-white m-auto bg-c-black-100 font-syne">
           <Header />
             <Routes>
               <Route path="/" element={<Home />} ></Route>

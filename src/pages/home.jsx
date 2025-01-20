@@ -1,16 +1,15 @@
 
 import Button from "../components/ui/button";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import MailContact from "../components/ui/mailContact";
 import ProjectCard from "../components/ui/projectCard";
 
 
 
 function Home() {
   return <>
-      <section className="hero-header border border-yellow-300 flex gap-2r flex-col items-center ">
+      <section className="mb-8r flex gap-2r flex-col items-center py-2r">
 
-        <h1 className="hero-header-title text-5r text-center font-semibold w-56r border">
+        <h1 className="text-5r text-center font-semibold w-56r">
         Adaptive Logo Design for Your Brand
         </h1>
 
@@ -19,9 +18,9 @@ function Home() {
         </Button>
       </section>
 
-      <section className="border border-violet-300 grid grid-cols-r-img-colgrid flex-col gap-8r items-center ">
+      <section className="mb-8r py-2r px-6r grid grid-cols-r-img-colgrid flex-col gap-8r items-center ">
         <div className="flex flex-col gap-2r items-start" >
-          <h1 className="hero-header-title text-4r font-semibold w-40r border">
+          <h1 className="text-4r font-semibold w-40r">
           Let's get know about me closer
           </h1>
 
@@ -41,8 +40,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="hero-header border border-yellow-300 flex gap-2r flex-col items-center ">
-        <h1 className="hero-header-title text-4r text-center font-semibold w-56r border ">
+      <section className="mb-4r py-2r px-6r flex gap-2r flex-col items-center ">
+        <h1 className="text-4r text-center font-semibold w-56r">
         My projects Hilight
         </h1>
 
@@ -50,7 +49,7 @@ function Home() {
           Explore works
         </Button>
 
-        <div className=" w-full grid grid-cols-r-auto gap-2r border-2 border-yellow-300 p-4 justify-center" >
+        <div className="mb-4r w-full grid grid-cols-r-auto gap-2r p-4 justify-center" >
           <ProjectCard />
           <ProjectCard img_name="2.png" />
           <ProjectCard img_name="3.png" />
@@ -58,13 +57,13 @@ function Home() {
         </div>
       </section>
 
-      <section>
+      <section className=" py-8r px-6r flex flex-col gap-2r items p-2r" >
 
-          <h2>
+          <h2 className="testimonials-title text-4r font-semibold w-56r" >
             Testimonials
           </h2>
 
-          <p>
+          <p className="text-c-white-50 text-p" >
               "Aaroon was a fantastic to work with from start to finish. We were looking for a simple, stand-out
               logo and he delivered. I tried designing the logo myself thinking I wouldn't need to pay the money
               for a professional graphic designer but I was very wrong. Working with Aaronn was worth any penny 
@@ -72,8 +71,14 @@ function Home() {
               boy, he was right. I can't thank Aaronn for his effort and professionalism. I would recommend him to
               any one looking for a design!"
           </p>
-          <h3>- Martin Lee</h3>
+          <h3 className="text-2r font-semibold" >
+            - Martin Lee
+          </h3>
       </section>
+
+      
+    <MailContact />
+
   </>
 }
 
