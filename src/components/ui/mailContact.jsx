@@ -2,7 +2,7 @@
 
 function MailContact() {
     return  <section className="bg-black py-8r" >
-        <h3 className="py-2r px-4r text-center text-2r font-semibold">
+        <h3 className="py-2r px-4r text-center text-2r text-c-orange-100 font-semibold">
           Get in touch with
         </h3>
         <a href="mailto:info@aaronn.com"

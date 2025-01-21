@@ -20,12 +20,14 @@ function Header() {
                     <Link to="/about" className="font-medium text-c-white-50 hover:text-white hover:text-semibold"  >ABOUT</Link>
                 </li>
                 <li className="navlink">
-                    <Link to="/contact" className="font-medium text-c-white-50 hover:text-white hover:text-semibold" >MY WORKS</Link>
+                    <Link to="/works" className="font-medium text-c-white-50 hover:text-white hover:text-semibold" >MY WORKS</Link>
                 </li>
             </ul>
             
             <Button type="secondary">
+                <Link to="/contact" className="font-medium text-c-white-50 hover:text-white hover:text-semibold" >
                 CONTACT
+                </Link>
             </Button>
           </nav>
 

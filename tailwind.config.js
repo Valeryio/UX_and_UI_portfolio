@@ -75,6 +75,7 @@ export default {
       },
       gridTemplateColumns: {
           // Simple 16 row grid
+          "contact-grid": "auto 40rem",
           "r-img-colgrid": "repeat(2, 1fr)",
           // "r-auto": "repeat(auto-fit, minmax(300px, 1fr))",
           "r-auto": "repeat(auto-fit, minmax(20rem, 32rem))",

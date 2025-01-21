@@ -1,18 +1,13 @@
 
 import MailContact from "../components/ui/mailContact";
+import HeroHeader from "../components/heroHeader";
 
 function About() {
   return <>
-      <section className="flex flex-col gap-2 mb-4r py-2r px-6r">
-        <h1 className="text-5r font-semibold w-40r">
-          About page
-        </h1>
-        <p className="text-c-white-50 text-p">
-          Little brief about myself
-        </p>
-      </section>
+
+      <HeroHeader title="About Me" description="Little brief about myself" />
       
-      <hr className="w-84r mb-4r m-auto" />
+      <hr className="w-80r mb-4r m-auto" />
 
       <section className="flex gap-2r justify-center mb-4r py-2r" >
         <h2 className="text-5r p-0 leading-none font-semibold max-w-32r" >
@@ -46,10 +41,10 @@ function About() {
         </h2>
 
         <div className="flex justify-between" >
-          <a href="#" className="text-2r text-c-black-25 font-semibold hover:text-white">
+          <a href="#" className="text-2r text-c-black-25 font-semibold hover:text-white hover:underline">
             DRIBBLE
             </a>
-          <a href="#" className="text-2r text-c-black-25 font-semibold hover:text-white">
+          <a href="#" className="text-2r text-c-black-25 font-semibold hover:text-white hover:underline">
             TWITTER
             </a>
           <a href="#" className="text-2r text-c-black-25 font-semibold hover:text-white hover:underline">

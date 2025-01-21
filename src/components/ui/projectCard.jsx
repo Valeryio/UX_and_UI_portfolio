@@ -10,7 +10,7 @@ const ProjectCard = ({img_name}) => {
     }
 
   return (
-    <div className="p-4 rounded-sm flex flex-col gap-2" >
+    <a href="#" className="p-4 rounded-sm flex flex-col gap-2" >
         <img src={path} alt="Image of a project" />
 
         <div className=" flex flex-col gap-2" >
@@ -25,7 +25,7 @@ const ProjectCard = ({img_name}) => {
                 <span className="text-c-white-100 text-normal" >Branding logo Design</span>
             </div>
         </div>
-    </div>
+    </a>
 )};
 
 export default ProjectCard;

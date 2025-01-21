@@ -4,10 +4,11 @@ import viteLogo from "/vite.svg";
 // import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Home from "./pages/home";
-import Footer from "./components/footer";
+import Works from "./pages/works";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Home />} ></Route>
               <Route index element={<Home />} ></Route>
               <Route path="/about" element={<About />} ></Route>
+              <Route path="/works" element={<Works />} ></Route>
               <Route path="/contact" element={<Contact />} ></Route>
             </Routes>
           <Footer />
