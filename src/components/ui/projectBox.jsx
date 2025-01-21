@@ -10,15 +10,15 @@ const ProjectBox = ({img_name}) => {
     }
 
   return (
-    <a href="#" className="p-4 rounded-sm flex flex-col gap-2" >
+    <a href="#" className="p-4 rounded-sm flex flex-col gap-2 max-w-16r" >
         <img src={path} alt="Image of a project" />
 
         <div className=" flex flex-col gap-2" >
-            <h3>
-
+            <h3 className="font-medium text-center" >
+              Blue
             </h3>
-            <p>
-
+            <p className="text-1.5r text-center font-semibold" >
+            Orvillebury
             </p>
         </div>
     </a>

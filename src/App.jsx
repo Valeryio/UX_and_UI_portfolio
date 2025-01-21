@@ -9,6 +9,7 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import Home from "./pages/home";
 import Works from "./pages/works";
+import ProjectDetails from "./pages/projectDetails";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
               <Route index element={<Home />} ></Route>
               <Route path="/about" element={<About />} ></Route>
               <Route path="/works" element={<Works />} ></Route>
+              <Route path="/works/:id" element={<ProjectDetails />} ></Route>
               <Route path="/contact" element={<Contact />} ></Route>
             </Routes>
           <Footer />
