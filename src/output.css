@@ -624,13 +624,13 @@ button
   position: relative;
 }
 
-button[data-icon="arrow-right"]::after
+button[data-icon="arrow-right"]::afer
   {
   content: "";
   width: 18px;
   height: 12px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 5%;
   background-image: url(/public/icons/icon.svg);
 }
@@ -785,6 +785,10 @@ img
   height: 4rem;
 }
 
+.w-12r {
+  width: 12rem;
+}
+
 .w-16r {
   width: 16rem;
 }
@@ -807,10 +811,6 @@ img
 
 .w-64r {
   width: 64rem;
-}
-
-.w-7r {
-  width: 7rem;
 }
 
 .w-80r {
@@ -929,9 +929,19 @@ img
   border-bottom-width: 2px;
 }
 
+.border-amber-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(120 53 15 / var(--tw-border-opacity, 1));
+}
+
 .border-c-black-25 {
   --tw-border-opacity: 1;
   border-color: rgb(105 105 105 / var(--tw-border-opacity, 1));
+}
+
+.border-green-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(74 222 128 / var(--tw-border-opacity, 1));
 }
 
 .border-green-500 {
@@ -957,16 +967,6 @@ img
 .border-yellow-400 {
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
-}
-
-.border-green-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity, 1));
-}
-
-.border-amber-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(120 53 15 / var(--tw-border-opacity, 1));
 }
 
 .bg-black {
@@ -1123,6 +1123,10 @@ img
   text-decoration-line: underline;
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1212,4 +1216,8 @@ body
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }

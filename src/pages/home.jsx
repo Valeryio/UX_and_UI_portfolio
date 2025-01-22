@@ -9,12 +9,15 @@ function Home() {
   return <>
       <section className="mb-8r flex gap-2r flex-col items-center py-2r">
 
+        <p className="text-1 text-c-white-75 " >
+          Hey <span className="text-white" >Linson</span> ! Pourquoi commencer par le design ?
+        </p>
         <h1 className="text-5r text-center font-semibold w-56r">
-        Adaptive Logo Design for Your Brand
+          C'est simple, Dieu est un Designer !
         </h1>
 
         <Button type="primary">
-          Explore works
+          Voir les travaux
         </Button>
       </section>
 

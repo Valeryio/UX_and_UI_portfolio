@@ -53,13 +53,13 @@
     position: relative;
   }
 
-  button[data-icon="arrow-right"]::after
+  button[data-icon="arrow-right"]::afer
   {
     content: "";
     width: 18px;
     height: 12px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 5%;
     background-image: url(/public/icons/icon.svg);
   }
