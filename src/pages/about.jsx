@@ -5,13 +5,14 @@ import HeroHeader from "../components/heroHeader";
 function About() {
   return <>
 
-      <HeroHeader title="About Me" description="Little brief about myself" />
+      <HeroHeader title="À propos" description="Un peu plus sur moi-même !" />
       
       <hr className="w-80r mb-4r m-auto" />
 
       <section className="flex gap-2r justify-center mb-4r py-2r" >
         <h2 className="text-5r p-0 leading-none font-semibold max-w-32r" >
-          My mision is to make design easier.
+          
+          Construire des designs uniques qui convertissent
         </h2>
         <p className="text-1.5r px-2 py-2r text-c-white-50 max-w-40r" >
           Create custom design with Aaronn that converts more visitor

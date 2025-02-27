@@ -23,9 +23,9 @@ function Home() {
 
       <section className="mb-8r py-2r px-6r grid grid-cols-r-img-colgrid flex-col gap-8r items-center ">
         <div className="flex flex-col gap-2r items-start" >
-          <h1 className="text-4r font-semibold w-40r">
+          <h2 className="text-4r font-semibold w-40r">
           Let's get know about me closer
-          </h1>
+          </h2>
 
           <p className="text-c-white-50 text-p" >
             Aaron is a New York-based visual designer focused on brand and visual identity.
@@ -80,7 +80,7 @@ function Home() {
       </section>
 
       
-    <MailContact />
+    <MailContact mailContact="yonnival0.8@gmail.com" />
 
   </>
 }

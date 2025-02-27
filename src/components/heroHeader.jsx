@@ -8,6 +8,7 @@ const HeroHeader = ({title, description}) => {
 //   if (!description) {
 //     const description = "Default description";
 //   }
+
   return (
     <section className="flex flex-col gap-2 mb-4r py-2r px-6r">
         <h1 className="text-5r font-semibold w-40r">

@@ -60,7 +60,6 @@ const ProjectDetails = () => {
             </div>
         </section>
 
-
         <section className="border border-red-600 flex mb-4r flex-col gap-2r justify-center" >
 
             <h2 className="text-4r text-center font-semibold border border-yellow-400" >
